@@ -1,0 +1,195 @@
+@media(max-width:450px){
+
+header {
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+       
+
+    }
+
+    .brand {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .brand img {
+        width: 25px;
+        object-fit: contain;
+    }
+
+    .brand b {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 50px 25px;
+        background-color: rgb(3, 114, 122);
+        position: absolute;
+        left: -300px;
+        top: 60px;
+        width: 300px;
+        height: calc(100vh - 100px);
+        gap: 35px;
+        transition: 1s;
+        z-index: 100000;
+    }
+
+    nav a {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+    }
+
+    nav a img {
+        width: 18px;
+        transition: 0.5s;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    nav a:hover img {
+        transform: scale(1.5);
+    }
+
+    .menu-btn {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        border: none;
+        background-image: url("./menu-btn.png");
+        background-size: cover;
+        background-position: center center;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    main {
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 10px;
+        /* background: linear-gradient(rgba(3, 3, 124, 0.7), rgba(77, 5, 39, 0.7), rgba(168, 124, 6, 0.9)), url("./main-bg.jpg");
+        background-size: cover;
+        background-position: center center; */
+        position: relative;
+
+    }
+
+    main video{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -20;
+    }
+
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(rgba(3, 93, 107, 0.9), rgba(1, 34, 34, 0.7));
+        top:0;
+        left:0;
+        z-index: -10;
+    }
+
+     .call-to-action{
+       color:white;
+       width: 60%;
+       padding: 15px 25px;
+       background-color: transparent;
+       border-radius: 50px;
+       font-size: 20px;
+       transition: 0.5s;
+       border: 1px solid white;
+       text-align: center;
+    }
+
+    .call-to-action:hover{
+        background-color: white;
+        color:rgba(3, 93, 107, 0.9);
+    }
+
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .social a{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(4, 108, 124, 0.9);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .social a img{
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .social a:hover img{
+        transform: scale(1.2);
+    }
+
+
+    footer {
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        display: flex;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        color: rgb(3, 114, 122);
+        font-size: 10px;
+    }
+
+    /* utility class */
+    .show-nav {
+        left: 0px;
+    }
+
+    .change-menu-bg{
+        background-image: url("./close.png");
+        background-size: cover;
+        transform: rotate(360deg);
+    }
+
+}
